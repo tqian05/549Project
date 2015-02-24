@@ -22,15 +22,19 @@ def component():
 
 @app.route('/comp')
 def competition():
-    return render_template('comp.html')
+    competition = ["competition_1", "competition_2"]
+    competition_urls = ["url1", "url2"]
+    return render_template('comp.html', competition = competition, competition_urls = competition_urls)
 
 @app.route('/motivation')
 def motivation():
-    return render_template('motivation.html')
+    motivation = "rawr so motivated"
+    return render_template('motivation.html', motivation = motivation)
 
 @app.route('/requirements')
 def requirements():
-    return render_template('requirements.html')
+    requirements = "we need this this and this"
+    return render_template('requirements.html', requirements = requirements)
 
 
 
