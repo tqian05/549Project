@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+{% block title %}Competitive Analysis{% endblock %}
+
+{% block navinfo %}
+   <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="concept">Concept</a></li>
+        <li  class="active"><a href="comp">Competitive Analysis</a></li>
+        <li><a href="motivation">Motivation</a></li>
+        <li><a href="requirements">Requirements</a></li>
+        <li><a href="components">Components</a></li>
+      </ul>
+   </div><!--/.nav-collapse -->
+{% endblock %}
+
+{% block content %}
+<style>
+    body {padding-top: 100px;}
+</style>
+<div class="bs-docs-header" id="content">
+    <div class="container">
+        <li><a href="https://www.youtube.com/watch?v=XgxXi6w8IQc">
+            Touch & Activate</a></li>
+        <p>Touch & Activate is a novel touch sensing technology published by researchers from
+the University of Tsukuba in Japan for UIST’13. Their technology centers around the
+concept of acoustic sensing, taking advantage of the fact that solid objects have
+different resonant profiles when interfered with a human touching it.</p>
+        <p> We want to build on this idea to actually define the position of the touch. </p>
+
+        <li><a href="http://www.disneyresearch.com/project/touche-touch-and-gesture-sensing-for-the-real-world/">
+            Touche</a>
+        <p>Touché is a similar technology built by Disney Research. It uses the idea of reading
+capacitive sensing when humans touch objects. </p>
+        <p>Touché uses Swept Frequency Capacitive Sensing, which differs from our product and has a higher cost</p>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
