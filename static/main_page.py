@@ -23,7 +23,7 @@ def component():
 @app.route('/comp')
 def competition():
     competition = ["competition_1", "competition_2"]
-    competition_urls = ["url1", "url2"]
+    competition_urls = ["http://www.google.com", "url2"]
     return render_template('comp.html', competition = competition, competition_urls = competition_urls)
 
 @app.route('/motivation')
