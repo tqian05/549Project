@@ -1,0 +1,44 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Main Page{% endblock %}
+
+{% block navbar %}
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/" class="navbar-brand">EZPZE</a>
+        </div>
+        {% block navinfo %}
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="concept">Concept</a></li>
+                <li><a href="comp">Competitive Analysis</a></li>
+                <li><a href="motivation">Motivation</a></li>
+                <li><a href="requirements">Requirements</a></li>
+                <li><a href="components">Components</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+        {% endblock %}
+      </div>
+    </nav>
+{% endblock %}
+
+{% block content %}
+<style>
+    body {padding-top: 100px;}
+</style>
+<div class="bs-docs-header" id="content">
+    <div class="container">
+        <div class="jumbotron">
+            <h1> EZPZE</h1>
+            <h2> A surface independent, scalable trackpad </h2>
+            <p> {{elevator_pitch}} </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
